@@ -38,10 +38,6 @@ On est connecté en tant que ruby
 
 Dans le dossier caché .bundle dans le home de ruby, on trouve le mot de passe de henry dans le fichier config:
 
-```bash
-"henry:Q3c1AqGHtoI0aXAYFH"
-```
-
 On peut alors se connecter en SSH et obtenir le flag user
 
 Il y a un SETUID énoncé comme tel : 
